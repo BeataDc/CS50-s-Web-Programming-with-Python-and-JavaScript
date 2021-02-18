@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.links {
+    height: 60px;
+    background-color: blueviolet;
+}
+
+.logo {
+    min-height: 92px;
+    background-color: cornflowerblue;
+}
+
+.google {
+    height:100%;
+    margin-top: auto;
+    padding-top: 150px;
+}
+
+img {
+    display: block;
+    height: 92px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-bar {
+    max-height: 160px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+
+}
+
+[type~="submit"] {
+    float: left;
+    height: 25px;
+    width: 125px;
+    background-color: lightsteelblue;
+    border: none;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-right: 10px;
+
+}
+
+[type~="text"] {
+    height: 50px;
+    width: 500px;
+    background-color: lightsteelblue;
+    border: none;
+    border-radius: 5px;
+
+
+}
+
+.footer1 {
+    background-color: limegreen;
+    height: 260px;
+}
+
+.footer1 {
+    background-color: magenta;
+    height: 260px;
+}
