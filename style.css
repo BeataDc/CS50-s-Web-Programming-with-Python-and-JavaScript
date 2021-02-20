@@ -2,17 +2,18 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: aquamarine;
+    background-color: white;
+    max-height: 800px;
 }
 
 .links {
     height: 60px;
-    background-color: blueviolet;
+    text-align: right;
 }
 
 .logo {
     min-height: 92px;
-    background-color: cornflowerblue;
+
 }
 
 .google {
@@ -35,40 +36,54 @@ img {
     padding: 20px;
 }
 
-input {
-    display: block;
-    margin: 0 auto;
-
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 436px;
 }
 
 [type~="submit"] {
-    float: left;
     height: 25px;
     width: 125px;
-    background-color: lightsteelblue;
+    background-color: #f8f9f9;
     border: none;
     border-radius: 5px;
-    margin-left: 150px;
-    margin-right: 10px;
+    outline: none;
 
 }
 
 [type~="text"] {
-    height: 50px;
-    width: 500px;
-    background-color: lightsteelblue;
-    border: none;
-    border-radius: 5px;
-
-
+    height: 40px;
+    width: 432px;
+    border: #d1d6db solid 1px;
+    border-radius: 25px;
+    outline: none;
 }
 
 .footer1 {
-    background-color: limegreen;
-    height: 260px;
+    height: 160px;
+    text-align: center;
+    font-family: arial,sans-serif;
+    font-size: small;
 }
 
-.footer1 {
-    background-color: magenta;
-    height: 260px;
+.footer2 {
+    height: 160px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+a:active {
+    text-decoration: none;
 }
