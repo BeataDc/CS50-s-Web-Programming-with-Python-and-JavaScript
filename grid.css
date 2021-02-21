@@ -1,0 +1,45 @@
+.item-a {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    grid-template-rows: 60px;
+    grid-template-areas:
+        ". link1 link2";
+    background-color:gray;
+}
+
+.item-b {
+    grid-area: logo;
+    background-color:gold;
+}
+
+.item-c {
+    grid-area: search;
+    background-color:green;
+}
+
+.item-d {
+    grid-area: footer;
+    background-color: red;
+}
+
+.link1 {
+    grid-area: link1;
+    background-color: red;
+}
+
+.link2 {
+    grid-area: link2;
+    background-color: red;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px 242px 127px 150px;
+    grid-template-areas:
+        ". header"
+        "logo logo"
+        "search search"
+        "footer footer";
+}
