@@ -1,3 +1,14 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px auto 127px 150px;
+    grid-template-areas:
+        ". header"
+        "logo logo"
+        "search search"
+        "footer footer";
+}
+
 .item-a {
     grid-area: header;
     display: grid;
@@ -5,41 +16,96 @@
     grid-template-rows: 60px;
     grid-template-areas:
         ". link1 link2";
-    background-color:gray;
 }
 
 .item-b {
     grid-area: logo;
-    background-color:gold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 150px;
+    padding-bottom: 38px;
 }
 
 .item-c {
     grid-area: search;
-    background-color:green;
+    display: flex;
+    justify-content: center;
 }
 
 .item-d {
     grid-area: footer;
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: arial,sans-serif;
+    font-size: small;
 }
 
 .link1 {
     grid-area: link1;
-    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    font-family: arial,sans-serif;
+    font-size: small;
+
 }
 
 .link2 {
     grid-area: link2;
-    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    font-family: arial,sans-serif;
+    font-size: small;
+
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 60px 242px 127px 150px;
-    grid-template-areas:
-        ". header"
-        "logo logo"
-        "search search"
-        "footer footer";
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+[type~="submit"] {
+    height: 25px;
+    width: 125px;
+    background-color: #f8f9f9;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+[type~="text"] {
+    height: 40px;
+    width: 500px;
+    border: #d1d6db solid 1px;
+    border-radius: 25px;
+    outline: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(loopka.svg);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    padding-left: 45px
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    height: 92px;
 }
