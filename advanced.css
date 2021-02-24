@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1140px;
+    grid-template-rows: 60px 60px 400px;
+    grid-template-areas:
+        "logo"
+        "logo1"
+        "search";
+}
+
+img {
+    height: 60px;
+    width: 152px;
+}
+
+h1 {
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: arial, sans-serif;
+    color: rgb(235, 84, 84);
+    font-weight: 100;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 15% 50% 35%;
+    grid-template-rows: repeat(5, 42px);
+    row-gap: 10px;
+    grid-template-areas:
+        "cell1 cell2 cell3"
+        "cell4 cell5 cell6"
+        "cell7 cell8 cell9"
+        "cell10 cell11 cell12"
+        "cell13 cell14 cell15";
+    margin-left: 30px;
+}
+
+[type~="text"] {
+    width: 500px;
+    height: 30px;
+    border: 1px solid darkgray;
+}
+
+.cell4, .cell6 {
+    width: 170px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.cell6 {
+    width: 350px;
+}
+
+p, label {
+    font-size: 13px;
+    
+}
+
+p {
+    color: darkgray;
+}
+
+.logo {
+    background-color: lightgrey;
+}
+
